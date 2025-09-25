@@ -41,16 +41,16 @@ class FastMandelbrot:
         control_frame = tk.Frame(self.root)
         control_frame.pack(fill=tk.X)
         
-        tk.Button(control_frame, text="🌀 Сброс", command=self.reset, 
+        tk.Button(control_frame, text="Сброс", command=self.reset, 
                  bg='lightblue', font=('Arial', 10)).pack(side=tk.LEFT, padx=5)
         
-        tk.Button(control_frame, text="⚡ Быстрая (50 итер)", command=lambda: self.set_iterations(50),
+        tk.Button(control_frame, text="Быстрая (50 итер)", command=lambda: self.set_iterations(50),
                  bg='lightgreen', font=('Arial', 9)).pack(side=tk.LEFT, padx=2)
         
-        tk.Button(control_frame, text="🎨 Качественная (100 итер)", command=lambda: self.set_iterations(100),
+        tk.Button(control_frame, text="Качественная (100 итер)", command=lambda: self.set_iterations(100),
                  bg='lightyellow', font=('Arial', 9)).pack(side=tk.LEFT, padx=2)
         
-        tk.Button(control_frame, text="🔍 Детальная (200 итер)", command=lambda: self.set_iterations(200),
+        tk.Button(control_frame, text="Детальная (200 итер)", command=lambda: self.set_iterations(200),
                  bg='lightcoral', font=('Arial', 9)).pack(side=tk.LEFT, padx=2)
         
         self.status = tk.Label(control_frame, text="Готово! Кликайте для зума", 
